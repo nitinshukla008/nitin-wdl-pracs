@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WDL EXPERIMENTS</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+  
+  body {font-family: "Lato", sans-serif;
+background: #0000;}
+
+.sidebar {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; 
+  padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.header {
+  padding: 12px;
+  background:#47495a;
+  color: #d0d5da;
+  border-bottom: 2px solid black;
+}
+</style>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="exp1.html">Experiment 1</a>
+  <a href="exp2.html"> Experiment 2</a>
+  <a href="exp3.html"> Experiment 3</a>
+  <a href="exp4A.html"> Experiment 4A</a>
+  <a href="exp4B.html"> Experiment 4B</a>
+  <a href="exp5.html"> Experiment 5</a>
+  <a href="exp6.html"> Experiment 6</a>
+  <a href="student.xml" target="_blank">Experiment 7</a>
+  <a href="exp8.html"> Experiment 8</a>
+  <a href="exp9.html"> Experiment 9</a>
+  <a href="exp10.html"> Experiment 10</a>
+  <a href="Mini Project.html"> Mini Project</a>
+  
+</div>
+<div class="main">
+<h2>EXPERIMENT 6 </h2>
+</div>
+
+<?php
+function OpenCon()
+ {
+ $dbhost = "localhost";
+ $dbuser = "root";
+ $dbpass = "";
+ $db = "User";
+ $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn ->
+ 
+
+
+<html>
+<head>
+ <meta charset = "utf-8">
+ <meta name="viewport" content="width-device-width">
+ <style>
+             body {
+                margin: 15%;
+                background-image: url('6img.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+              }
+ </style>
+</head>
+
+<body style = "text-align: center" >
+    <div style = "margin: auto; width: 50%; border: 2px rgb(255, 255, 255) solid">
+        <h1 style = "color: rgb(187, 27, 27)">User Sign up</h1>
+        <form action="" method="POST" style = "font-size:20px; color: white;">
+            <label for="UName">Name</label>
+            <input type="text" name="uname" Placeholder="Enter Your Name:-"><br><br>
+            <label for="User_Name">User Name</label>
+            <input type="text" name="User_Name" Placeholder="Enter Your UserName:-"><br><br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" Placeholder="Enter Your E-Mail:-"><br><br>
+            <label for="city">City</label>
+            <input type="text" name="city" Placeholder="Enter Your City:-"><br><br>
+            <label for="phno">Mobile Number</label>
+            <input type="text" name="phno" Placeholder="Enter Your Mobile Number:-"><br><br>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+
+       
+        <?php
+            if(isset($_POST['submit']))
+            {
+                $uname = $_POST['uname'];
+                $User_Name = $_POST['User_Name'];
+                $email = $_POST['email'];
+                $city = $_POST['city'];
+                $phno = $_POST['phno'];
+                $sql1 = "INSERT INTO User1 Values('$uname','$User_Name','$email','$city','$phno')";
+                if (mysqli_query($conn, $sql1)) {
+                    echo "New record created successfully !";
+                } else {
+                    echo "Error: " . $sql1 . " " . mysqli_error($conn);
+                }
+            }
+
+        ?>
+    </div>
+</body>
+</html>
